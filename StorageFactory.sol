@@ -10,7 +10,7 @@ contract StorageFactory is SimpleStorage { //brings in SimpleStorage functions/c
     //TRANSACT FN: Populates array 
     function createSimpleStorageContract() public {
         SimpleStorage simpleStorageObject = new SimpleStorage(); //creates contract/object
-        simpleStorageArray.push(simpleStorageObject); //push contract/object to array
+        simpleStorageArray.push(simpleStorageObject); //add contract/object to array
     }
 
     //TRANSACT FN: Store a number to a contract (specified by index). Errors if no contract at index.
